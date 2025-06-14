@@ -5,12 +5,13 @@
 
 body {
   background-color: #fcf3dd;
-  /* Altura mínima de 100% da viewport */
+  /* Altura mínima de 100vh e flexbox para o layout */
   min-height: 100vh; 
-  /* Usa flexbox para organizar header, main e footer em coluna */
   display: flex; 
   flex-direction: column;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif; /* Garante a fonte Poppins em todo o body */
+  font-size: 16px; /* Define o tamanho de fonte base para 16px */
 }
 
 a {
@@ -47,8 +48,8 @@ nav {
 }
 
 main {
-  /* Remove a altura fixa para permitir que o conteúdo se expanda */
-  flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+  /* Permite que o main ocupe o espaço restante */
+  flex-grow: 1; 
 }
 
 .nav-list {
@@ -224,8 +225,8 @@ footer {
     padding: 0;
 }
 
-.footer-section ul li {
-    margin-bottom: 10px;
+.footer-section.credits ul li {
+    font-size: 0.9rem; /* Para igualar o tamanho da fonte com os parágrafos do rodapé */
 }
 
 .footer-section ul li a {
